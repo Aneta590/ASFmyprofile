@@ -1,14 +1,16 @@
 header {
   height: 70px;
   width: 100%;
-  background-color: grey;
-  color:#e7f70e;
+  background-color: #403B3B;
+  color: forestgreen;
   font-weight: bold;
-  box-shadow: 10px 5px 15px black;
+  box-shadow: 10px 5px 15px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
 }
-
+#competences h4,#atouts h4,#hobby h4, #contact h4{
+  background-color: #3F4238;
+}
 header nav ul {
  
   height: 50px;
@@ -19,7 +21,7 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color: #e7f70e;
+  color:#FFFF;
   position: relative;
   transition: 0.4s ease;
   /* width: 200px; */
@@ -85,12 +87,12 @@ section p {
 .aboutme h1 {
   font-size: 38px;
   /* font-weight: bold; */
-  color: #e7f70e;
+  color:white;
   margin-top: 15px;
 }
 section h4 {
   font-size: 20px;
-  color: #e7f70e;
+  color: #FFFF;
   margin-left: 0;
   margin-bottom: 10px;
   box-shadow: 10px 5px 15px black;
@@ -108,7 +110,7 @@ section p {
 #contact a {
   /* padding: 4px; */
   text-decoration: none;
-  color: #e7f70e;
+  color: #FFFF;
   /* margin-bottom: 150px ;
   margin-top: 15px; */
   margin-left: 190px;
@@ -131,7 +133,13 @@ section p {
   box-shadow: 10px 5px 15px black;
 }
 .body {
-  background-color: grey;
+  background-color: rgb(41, 37, 37);
+}
+/* .aboutme p{
+  color: white;
+} */
+.aboutme p,#competences ul li,#atouts ul li,#hobby ul li{
+  color: white; 
 }
 @media screen and (max-width:550px) {
   #contact a i{  
