@@ -1,18 +1,20 @@
 header {
   height: 70px;
   width: 100%;
-  background-color: #403B3B;
+  background-color: #403b3b;
   color: forestgreen;
   font-weight: bold;
   box-shadow: 10px 5px 15px rgb(0, 0, 0);
   display: flex;
   justify-content: center;
 }
-#competences h4,#atouts h4,#hobby h4, #contact h4{
-  background-color: #3F4238;
+#competences h4,
+#atouts h4,
+#hobby h4,
+#contact h4 {
+  background-color: #3f4238;
 }
 header nav ul {
- 
   height: 50px;
   list-style: none;
   display: flex;
@@ -21,32 +23,26 @@ header nav ul {
 }
 header nav ul li a {
   text-decoration: none;
-  color:#FFFF;
+  color: #ffff;
   position: relative;
   transition: 0.4s ease;
-  /* width: 200px; */
   display: block;
   text-align: center;
   cursor: pointer;
 }
 header nav ul li a::before {
-  
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
-  /* background-color: white; */
   z-index: 5;
   transform: scaleX(0);
   transition: transform 0.5s;
   transform-origin: 0 0;
   text-transform: uppercase;
 }
-/* header nav ul li a:hover::before {
-  /* transform: scaleX(1); */
-
 
 * {
   font-family: "Roboto", sans-serif;
@@ -58,7 +54,7 @@ header nav ul li a::before {
 header nav ul li {
   margin: 0px 20px;
 }
-header nav{
+header nav {
   width: 70%;
 }
 .aboutme {
@@ -67,7 +63,6 @@ header nav{
   align-items: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  /* background-color: orange; */
 }
 h1,
 h4 {
@@ -77,7 +72,6 @@ h4 {
 section {
   margin: 0px auto;
   width: 70%;
-  /* background-color:#ffb653; */
 }
 
 section p {
@@ -86,13 +80,12 @@ section p {
 
 .aboutme h1 {
   font-size: 38px;
-  /* font-weight: bold; */
-  color:white;
+  color: white;
   margin-top: 15px;
 }
 section h4 {
   font-size: 20px;
-  color: #FFFF;
+  color: #ffff;
   margin-left: 0;
   margin-bottom: 10px;
   box-shadow: 10px 5px 15px black;
@@ -102,29 +95,19 @@ section h4 {
 section p {
   line-height: 1.8;
 }
-/* img{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  } */
+
 #contact a {
-  /* padding: 4px; */
   text-decoration: none;
-  color: #FFFF;
-  /* margin-bottom: 150px ;
-  margin-top: 15px; */
+  color: #ffff;
   margin-left: 190px;
 }
 
-#contact{
+#contact {
   margin-bottom: 15px;
 }
-#contact h4{
+#contact h4 {
   margin-bottom: 15px;
 }
-/* a{
-  margin-bottom: 20px;
-} */
 .anetaimg {
   width: 150px;
   border-radius: 50%;
@@ -135,31 +118,30 @@ section p {
 .body {
   background-color: rgb(41, 37, 37);
 }
-/* .aboutme p{
+.aboutme p,
+#competences ul li,
+#atouts ul li,
+#hobby ul li {
   color: white;
-} */
-.aboutme p,#competences ul li,#atouts ul li,#hobby ul li{
-  color: white; 
 }
-@media screen and (max-width:550px) {
-  #contact a i{  
-    font-size: 15px  !important;
+@media screen and (max-width: 550px) {
+  #contact a i {
+    font-size: 15px !important;
   }
-  header nav ul{
+  header nav ul {
     flex-direction: column;
-    /* align-items: flex-start;  */
     justify-content: flex-start;
     margin-top: 15px;
   }
-  header{
+  header {
     height: 150px;
   }
+}
+@media screen and (min-width: 551px) and (max-width: 798px) {
+  header nav {
+    width: 100%;
   }
-  @media screen and (min-width:551px) and (max-width:798px) {
-header nav {
-  width: 100%;
+  #contact a i {
+    font-size: 15px !important;
+  }
 }
-#contact a i{  
-  font-size: 15px  !important;
-}
-  }  
